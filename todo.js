@@ -32,6 +32,8 @@
 
 
 let todo = [];
+let userInput = document.getElementById("userInput").value;
+    let outputDiv = document.getElementById("output");
 
 function processRequest() {
     let userInput = document.getElementById("userInput").value;
@@ -67,5 +69,34 @@ function handleKeyPress(event) {
         processRequest();
     }
 }
+function add(){
+    let task = prompt("Enter the task you want to add:");
+        todo.push(task);
+        outputDiv.innerHTML = "Task added";
+
+        list()
+}
+let addbtn=document.getElementById('add')
+addbtn.addEventListener('click',add)
+function list(){
+    let result = "------------<br>";
+        for (let i = 0; i < todo.length; i++) {
+            result += (i + 1) + " " + todo[i] + "<br>";
+        }
+        result += "------------";
+        outputDiv.innerHTML = result;
+}
+let listbtn=document.getElementById('list')
+listbtn.addEventListener('click',list)
+
+function dlt(){
+    let idx = prompt("Enter the task number you want to delete");
+        todo.splice(idx - 1, 1);
+        outputDiv.innerHTML = "Task deleted";
+        list()
+
+}
+let dltbtn=document.getElementById('delete')
+dltbtn.addEventListener('click',dlt)
 
 
