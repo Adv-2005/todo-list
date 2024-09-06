@@ -36,8 +36,8 @@ let userInput = document.getElementById("userInput").value;
     let outputDiv = document.getElementById("output");
 
 function processRequest() {
-    let userInput = document.getElementById("userInput").value;
-    let outputDiv = document.getElementById("output");
+    // let userInput = document.getElementById("userInput").value;
+    // let outputDiv = document.getElementById("output");
 
     if (userInput == "quit") {
         outputDiv.innerHTML = "Quitting app";
@@ -70,8 +70,8 @@ function handleKeyPress(event) {
     }
 }
 function add(){
-    let task = prompt("Enter the task you want to add:");
-        todo.push(task);
+    // let task = prompt("Enter the task you want to add:");
+        todo.push(userInput);
         outputDiv.innerHTML = "Task added";
 
         list()
@@ -98,5 +98,6 @@ function dlt(){
 }
 let dltbtn=document.getElementById('delete')
 dltbtn.addEventListener('click',dlt)
+
 
 
