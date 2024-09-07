@@ -1,43 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Change to space-between */
     background-color: #F5F7F8;
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
+    height: 100vh;
+    margin: 0; 
+    background-image: url('D:/Delta/todo-list/alex-gruber-JZzxrzgZ3bs-unsplash.jpg');
+    background-size: cover;
+
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
 }
 
-#info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-}
 
 #userInput {
     border: 1px solid black;
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
     margin-top: 1rem;
     height: 2rem;
 }
 
-#input {
-    width: 100%; /* Optional, to make input span the entire width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 1rem; /* Some margin at the bottom */
-}
+
 .functions{
     margin: 1rem;
 }
 #buttons{
     display: flex;
-    
 }
 #buttons button{
     background-color: #FCDE70;
+   height: 2rem;
+   width: 2rem;
+   border-radius: 100%;
+}
+#request{
+    display: flex;
+    width: 80%;
+    
+    
+  
+
+}
+#UI{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    
+}
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color:black;
+    opacity: 50%;
+    align-self: center; 
+    width: 80%; 
+    
+  
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    color: aliceblue; 
+    /* font-family:'Times New Roman', Times, serif; */
+}
+.task {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #F0F8FF;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.task-number {
+    color: #FF6347;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.task-text {
+    color: #0000FF;
+ 
 }
