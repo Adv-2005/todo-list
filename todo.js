@@ -24,8 +24,13 @@ function list() {
     let result = "";
     
     for (let i = 0; i < todo.length; i++) {
-        result += "<div class='task'><span class='task-number'>" + (i + 1) + 
-                  "</span><span class='task-text'>" + todo[i] + "</span></div>";
+        result += `
+        <div class='task'>
+        <button class="delete-btn" onclick="deleteTask(${i})">O</button>
+            <span class='task-text'>${todo[i]}</span>
+            
+        </div>
+    `
     }
     
     outputDiv.innerHTML = result;
@@ -42,6 +47,11 @@ function dlt(){
 }
 let dltbtn=document.getElementById('delete')
 dltbtn.addEventListener('click',dlt)
+
+function deleteTask(index) {
+    todo.splice(index, 1);  
+    list();  
+}
 
 
 

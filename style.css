@@ -10,6 +10,7 @@ body {
     margin: 0; 
     background-image: url("bg.jpg");
     background-size: cover;
+    
 
     font-family: 'Inter',Arial, Helvetica, sans-serif;
 }
@@ -88,12 +89,23 @@ body {
     flex-direction: row;
     align-items: center;
 }
-.task-number {
-    color: #FF6347;
-    font-weight: bold;
-    margin-right: 10px;
-}
+
 .task-text {
-    color: #0000FF;
+    color: black;
+    margin-left: 1rem;
  
+}
+
+.delete-btn {
+     background-color: #F0F8FF; 
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    margin-left: 10px;
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    opacity: 100%;
 }
