@@ -35,18 +35,10 @@ function list() {
     
     outputDiv.innerHTML = result;
 }
-let listbtn=document.getElementById('list')
 
 
-function dlt(){
-    let idx = prompt("Enter the task number you want to delete");
-        todo.splice(idx - 1, 1);
-        outputDiv.innerHTML = "Task deleted";
-        list()
 
-}
-let dltbtn=document.getElementById('delete')
-dltbtn.addEventListener('click',dlt)
+
 
 function deleteTask(index) {
     todo.splice(index, 1);  
